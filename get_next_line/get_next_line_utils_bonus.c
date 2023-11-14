@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpino-mo <hpino-mo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 15:41:08 by hpino-mo          #+#    #+#             */
-/*   Updated: 2023/11/13 19:36:37 by hpino-mo         ###   ########.fr       */
+/*   Created: 2023/11/14 14:50:33 by hpino-mo          #+#    #+#             */
+/*   Updated: 2023/11/14 14:51:20 by hpino-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_strjoin(char *s1, char *s2, int bytes_read)
 {

@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpino-mo <hpino-mo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 15:41:11 by hpino-mo          #+#    #+#             */
-/*   Updated: 2023/11/14 14:48:55 by hpino-mo         ###   ########.fr       */
+/*   Created: 2023/11/14 14:49:22 by hpino-mo          #+#    #+#             */
+/*   Updated: 2023/11/14 15:47:08 by hpino-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 static char	*ft_stsh_clean(char *stash)
 {
@@ -93,16 +93,16 @@ static char	*ft_get_read_stash(char *stash, int fd)
 
 char	*get_next_line(int fd)
 {
-	static char	*stash;
+	static char	*stash[4096];
 	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE < 1)
 		return (0);
-	stash = ft_get_read_stash(stash, fd);
-	if (!stash)
+	stash[fd] = ft_get_read_stash(stash[fd], fd);
+	if (!stash[fd])
 		return (NULL);
-	line = ft_get_line(stash);
-	stash = ft_stsh_clean(stash);
+	line = ft_get_line(stash[fd]);
+	stash[fd] = ft_stsh_clean(stash[fd]);
 	return (line);
 }
 

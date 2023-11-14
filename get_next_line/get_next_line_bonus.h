@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpino-mo <hpino-mo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 15:41:13 by hpino-mo          #+#    #+#             */
-/*   Updated: 2023/11/13 19:02:33 by hpino-mo         ###   ########.fr       */
+/*   Created: 2023/11/14 14:50:30 by hpino-mo          #+#    #+#             */
+/*   Updated: 2023/11/14 14:51:11 by hpino-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # include <ctype.h>
 # include <fcntl.h>
